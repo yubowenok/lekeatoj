@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title>Lekeat Online Judge</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta http-equiv="Content-Type" content="text/html;" />
+	<script type="text/javascript" src="jquery-ui-1.10.4.custom/js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js"></script>
+	<link rel="stylesheet" href="jquery-ui-1.10.4.custom/css/smoothness/jquery-ui-1.10.4.custom.min.css" />
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body id='page'>
+<script type="text/javascript">curpage="problem";</script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="problem.js"></script>
+
+<div id='header'></div>
+<div class='container'>
+	<div class='title'>Problem A - Multiplication</div>
+	<div class='problimit'>
+		<span class='problimit'>Time Limit:</span><span class='problimit'>3000MS</span>
+		<span class='problimit'>Memory Limit:</span><span class='problimit'>64MB</span>
+	</div>
+	<div class='sectionheader'>Description</div>
+	<div class='sectioncontent'>This is a happy test problem. Given two non-negative integers, compute their multiplication.</div>
+	<div class='sectionheader'>Input</div>
+	<div class='sectioncontent'>Each test case has two integers, <span class='math'>a</span> and <span class='math'>b</span>.</div>
+	<div class='sectionheader'>Output</div>
+	<div class='sectioncontent'>Output the multiplication as a single integer.</div>
+	<div class='sectionheader'>Test Specification</div>
+	<div class='sectioncontent'>
+		<ul>
+			<li>Small: <span class='math'>0&nbsp;&le;&nbsp;a,b&nbsp;&le;&nbsp;100</span></li>
+			<li>Medium: <span class='math'>0&nbsp;&le;&nbsp;a,b&nbsp;&le;&nbsp;10<sup class='math-index'>9</sup></span></li>
+			<li>Large: <span class='math'>0&nbsp;&le;&nbsp;a,b&nbsp;&le;&nbsp;10<sup class='math-index'>100</sup></span></li>
+			<li>Challenge: <span class='math'>0&nbsp;&le;&nbsp;a,b&nbsp;&le;&nbsp;10<sup class='math-index'>100000</sup></span></li>
+		</ul>
+		<!--
+		<table width='50%'>
+		<tr><td>Small</td><td><span class='math'>0&nbsp;&le;&nbsp;a,b&nbsp;&le;&nbsp;100</span></td></tr>
+		<tr><td>Medium</td><td><span class='math'>0&nbsp;&le;&nbsp;a,b&nbsp;&le;&nbsp;10<sup class='math-index'>18</sup></span></td></tr>
+		<tr><td>Large</td><td><span class='math'>0&nbsp;&le;&nbsp;a,b&nbsp;&le;&nbsp;10<sup class='math-index'>100</sup></span></td></tr>
+		<tr><td>Challenge</td><td><span class='math'>0&nbsp;&le;&nbsp;a,b&nbsp;&le;&nbsp;10<sup class='math-index'>100000</sup></span></td></tr>
+		</table>
+		-->
+	</div>
+	<div class='sectionheader'>Sample(s)</div>
+	<div class='sectioncontent'>
+		<div class='samplewrapper'>
+			<div class='sampleheader'>Input #1</div>
+			<pre>3 5</pre>
+			<div class='sampleheader'>Output #1</div>
+			<pre>15</pre>
+		</div>
+		<div class='samplewrapper'>
+			<div class='sampleheader'>Input #2</div>
+			<pre>1 100</pre>
+			<div class='sampleheader'>Output #2</div>
+			<pre>100</pre>
+		</div>
+		<div class='samplewrapper'>
+			<div class='sampleheader'>Input #3</div>
+			<pre>123456789 987654321</pre>
+			<div class='sampleheader'>Output #3</div>
+			<pre>121932631112635269</pre>
+		</div>
+	</div>
+	<div class='sectionheader'></div>
+	
+	<input type='button' id='subs' value='My Submissions' class='bottombtn'>
+	<input type='button' id='stat' value='Statistics' class='bottombtn'>
+	<input type='button' id='edit' value='Edit' class='bottombtn'>
+		
+	
+	<div id='submitbox' class='submitbox'>
+		<div>
+		Language: <select id='srclang'>
+			<option value='gcc'>C</option>
+			<option value='gpp'>C++</option>
+			<option value='java'>Java</option>
+		</select>
+		</div>
+		<div>
+			Paste source code here or upload file:
+			<textarea id='srctext' class='sourcecode'></textarea>
+		</div>
+		<div><input type="file" id="srcfile"/></div>
+	</div>
+	<input type='button' value='SUBMIT' class='emphbtn' id='submit'>
+</div>
+</body>
+</html>

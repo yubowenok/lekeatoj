@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>Lekeat Online Judge</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta http-equiv="Content-Type" content="text/html;" />
+	<script type="text/javascript" src="jquery-ui-1.10.4.custom/js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js"></script>
+	<link rel="stylesheet" href="jquery-ui-1.10.4.custom/css/smoothness/jquery-ui-1.10.4.custom.min.css" />
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body id='page'>
+<script type="text/javascript">curpage="result";</script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="result.js"></script>
+
+<div id='header'></div>
+<div class='container'>
+	<div class='title'> Judging Submission #1234567</div>
+	<div class='text-bold'>Status:<span id='status' class='color-run judgestatus'>Running...</span></div>
+	
+	<div id="progress" class="judgeprogress"></div>
+		
+	<div class='sectionheader'> Group Small <span class='groupresult color-run'>PENDING</span></div>
+	<div class='sectioncontent'>
+		<div class='judgegroup'>
+			<span class='testcase color-ac text-bold'><span class='testid bgcolor-ac'>1</span>OK</span>
+			<span class='testcase color-ac text-bold'><span class='testid bgcolor-ac'>2</span>OK</span>
+			<span class='testcase color-ac text-bold'><span class='testid bgcolor-ac'>3</span>OK</span>
+			<span class='testcase color-ac text-bold'><span class='testid bgcolor-ac'>4</span>OK</span>
+			<span class='testcase color-run text-bold'><span class='testid bgcolor-run'>5</span>Running...</span>
+			<span class='testcase'><span class='testid'>6</span>Waiting</span>
+			<span class='testcase'><span class='testid'>7</span>Waiting</span>
+			<span class='testcase'><span class='testid'>8</span>Waiting</span>
+		</div>
+	</div>
+	<div class='sectionheader'> Group Medium <span class='groupresult color-rej'>FAILED</span></div>
+		<div class='sectioncontent'>
+		<div class='judgegroup'>
+			<span class='testcase color-ac text-bold'><span class='testid bgcolor-ac'>1</span>OK</span>
+			<span class='testcase color-ac text-bold'><span class='testid bgcolor-ac'>2</span>OK</span>
+			<span class='testcase color-ac text-bold'><span class='testid bgcolor-ac'>3</span>OK</span>
+			<span class='testcase color-rej text-bold'><span class='testid bgcolor-rej'>4</span>WA</span>
+			<span class='testcase'><span class='testid'>5</span>Skipped</span>
+			<span class='testcase'><span class='testid'>6</span>Skipped</span>
+			<span class='testcase'><span class='testid'>7</span>Skipped</span>
+			<span class='testcase'><span class='testid'>8</span>Skipped</span>
+		</div>
+	</div>
+	<div class='sectionheader'> Group Large <span class='groupresult color-ac'>PASSED</span></div>
+	<div class='sectioncontent'>
+		<div class='judgegroup'>
+			<span class='testcase color-ac text-bold'><span class='testid bgcolor-ac'>1</span>OK</span>
+			<span class='testcase color-ac text-bold'><span class='testid bgcolor-ac'>2</span>OK</span>
+		</div>
+	</div>
+	<div class='sectionheader'></div>
+	<input type='button' value='View Source' class='bottombtn' id='source'>
+</div>
+</body>
+</html>
