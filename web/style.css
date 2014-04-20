@@ -23,7 +23,6 @@ p, a {
 span {
 	font-weight: inherit;
 	font-size: inherit;
-	margin: inherit;
 	line-height: inherit;
 }
 
@@ -278,14 +277,11 @@ pre {
 }
 .groupresult{
 	margin-right: 0.5em;
-	margin-top: 0px;
 	float:right;
 }
 .subinfo{
 	font-size: 12px;
 	margin-right: 1em;
-	margin-top: 1em;
-	margin-bottom: 1em;
 	font-weight: bold;
 }
 
