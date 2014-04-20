@@ -135,15 +135,18 @@ pre {
 	font-size: 12px;
 }
 .bottombtn{
-	font-size: 30x;
+	font-size: 14px;
 	float: left;
 	margin: 0px 10px;
 	width: 150px;
 }
 .btn{
-	font-size: 30x;
-	margin: 10px 10px;
-	width: 150px;
+	font-size: 14px;
+	margin-right: 0.5em;
+	width: 50px;
+}
+.pdfbtn{
+	font-size: 12px;
 }
 .submitbox{
 	float: left;
@@ -277,6 +280,11 @@ pre {
 	display: inline-block;
 	text-align: left;
 	vertical-align: middle;
+}
+.registerhint{
+	font-size: 11px;
+	text-decoration: underline;
+	margin-top: 15px;
 }
 .info{
 	width: 250px;

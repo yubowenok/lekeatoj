@@ -11,6 +11,7 @@ $(document).ready( function(){
 					$("body").append("<div id='dialog'></div>");
 					$("#dialog").append("<div><span class='registerinfo'>Handle</span> <input type='text' id='handle'></div>");
 					$("#dialog").append("<div><span class='registerinfo'>Password</span> <input type='password' id='passwd'></div>");
+					$("#dialog").append("<div class='registerhint'><a href='register.html'>Acquire new handle</a></div>");
 					$("#dialog").dialog({
 						title: "Login",
 						close: function(){ $("#dialog").remove(); },
