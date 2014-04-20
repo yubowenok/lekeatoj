@@ -1,7 +1,44 @@
 
 $(document).ready( function(){
 	$("#header").load("header.html", function(){
-		$("#user").button().addClass("btn-text");
+		user = getCookie("handle");
+		if (user!="") {
+			$("#user").val(user);
+		}
+		$("#user").button().addClass("btn-text").click( function(){
+				user = getCookie("handle");
+				if (user=="") {
+					$("body").append("<div id='dialog'></div>");
+					$("#dialog").append("<div><span class='registerinfo'>Handle</span> <input type='text' id='handle'></div>");
+					$("#dialog").append("<div><span class='registerinfo'>Password</span> <input type='password' id='passwd'></div>");
+					$("#dialog").dialog({
+						title: "Login",
+						close: function(){ $("#dialog").remove(); },
+						buttons: [
+							{
+								text: "Login" ,
+								click: function(){
+									var handle = $("#handle").val(),
+										passwd = $("#passwd").val();
+									if (handle=="") {
+										alert("Incorrect handle/password");
+										return;
+									}
+									setCookie("handle", handle, 0.05);
+									$("#user").val(handle);
+									$("#dialog").remove();
+								}
+							},
+							{
+								text: "Cancel" ,
+								click: function(){ $("#dialog").remove(); }
+							}
+						]
+					})
+				}else{
+					window.location = "account.html";
+				}
+		});
 		$("#hdr"+curpage).addClass("headersel");
 		pages = ["index", "session", "problem", "submission", "result"];
 		pageidx = pages.indexOf(curpage);
@@ -11,16 +48,7 @@ $(document).ready( function(){
 	$(".bottombtn").button();
 	$(".btn").button();
 	
-	/*
-	$("td").addClass("ui-widget-content");
-	$("tr")
-		.hover( function(){ $(this).children("td").addClass("ui-state-hover"); },
-				function(){ $(this).children("td").removeClass("ui-state-hover"); } )
-		.click( function(){ 
-			$(this).children("td").toggleClass("ui-state-highlight");
-			$(this).children("td").toggleClass("ui-state-highlight");
-		});
-		*/
+	$( document ).tooltip();
 });
 
 function selectText(element) {
@@ -36,4 +64,22 @@ function selectText(element) {
         selection.removeAllRanges();
         selection.addRange(range);
     }
+}
+
+function setCookie(cname,cvalue,exhours)
+{
+	var d = new Date();
+	d.setTime(d.getTime()+(exhours*60*60*1000));
+	var expires = "expires="+d.toGMTString();
+	document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+function getCookie(cname)
+{
+	var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i<ca.length; i++) {
+	  var c = ca[i].trim();
+	  if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+	}
+	return "";
 }

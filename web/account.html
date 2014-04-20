@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>Lekeat Online Judge</title>
+	<link rel="shortcut icon" href="lekeat/favicon.ico">
+	<meta http-equiv="Content-Type" content="text/html;" />
+	<script type="text/javascript" src="jquery-ui-1.10.4.custom/js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js"></script>
+	<link rel="stylesheet" href="jquery-ui-1.10.4.custom/css/smoothness/jquery-ui-1.10.4.custom.min.css" />
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body id='page'>
+<script type="text/javascript">curpage="index";</script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="account.js"></script>
+<div id='header'></div>
+<div class='container'>
+	<div id='title' class='title'> Account Info - </div>
+    <img src="images/usericon.png" class='usericon-edit' title='Click to upload avatar'>
+    <div class='sectionheader'> Preference </div>
+    <div class='sectioncontent'>
+        <div>
+            <span class='info'> Default Progamming Language</span>
+            <select id='preflang'>
+                <option value='gcc'>C</option>
+                <option value='gpp'>C++</option>
+                <option value='java'>Java</option>
+            </select>
+        </div>
+        <div>
+            <span class='info'> Publish Code By Default</span>
+            <input type='checkbox' id='prefpub'>
+        </div>
+    </div>
+    <div class='sectionheader'> Password </div>
+    <div class='sectioncontent'>
+        <div><span class='info'> Old Password</span><input type='password' id='oldpasswd'></div>
+        <div><span class='info'> New Password</span><input type='password' id='passwd'></div>
+        <div><span class='info'>Confirm New Password</span><input type='password' id='passwd2'></div>
+	</div>
+    <div class='sectionheader'> General Info </div>
+	<div class='sectioncontent'>
+        <div><span class='info'>Name</span><input type='text' id='passwd2'></div>
+        <div><span class='info'>Email</span><input type='text' id='passwd2'></div>
+        <div><span class='info'>Country</span><input type='text' id='passwd2'></div>
+        <div><span class='info'>Gender</span><input type='text' id='passwd2'></div>
+        <div><span class='info'>Organization</span><input type='text' id='passwd2'></div>
+        <div><span class='info'>Motto</span><input type='text' id='passwd2'></div>
+        <div><span class='info'>Programming Experience</span>
+            <select id='progexp'>
+                <option value='lt3m'>&lt;&nbsp;1 month</option>
+                <option value='3m'>3 months</option>
+                <option value='6m'>6 months</option>
+                <option value='1yr'>1 year</option>
+                <option value='2yrs'>2 years</option>
+                <option value='5yrs'>3-5 years</option>
+                <option value='10yrs'>6-10 years</option>
+                <option value='20yrs'>11-20 years</option>
+                <option value='50yrs'>21-50 years</option>
+                <option value='sea'>as long as the sea</option>
+            </select>
+        </div>
+	</div>
+    <div class='sectionheader'></div>
+    <input type='button' value='Update' class='bottombtn' id='update'>
+    <input type='button' value='Logout' class='bottombtn' id='logout'>
+</div>
+</body>
+</html>

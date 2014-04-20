@@ -26,6 +26,10 @@ p, a {
 	position: relative;
 	float: right;
 }
+.usericon-edit{
+	width:100px;
+	height:100px;
+}
 .usericon{
 	width: 30px;
 	height: 30px;
@@ -268,6 +272,18 @@ pre {
 	float:right;
 }
 
+.registerinfo{
+	width: 150px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+.info{
+	width: 250px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
 table {
 	border: 2px solid #d1d2d4;
 	text-align: center;
