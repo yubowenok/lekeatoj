@@ -35,5 +35,10 @@ function updateProgress(){
     if (perc>=100.0) {
         clearTimeout(timer);
         $("#status").text("Partially Accepted").removeClass("color-run").addClass("color-pac");
+        $("#title").text("Submission Result #1234567");
+        $("#group-small .testverdict").text("OK");
+        $("#group-small .testid").removeClass("bgcolor-run").addClass("bgcolor-ac");
+        $("#group-small .testcase").removeClass("color-run").addClass("color-ac text-bold");
+        $("#groupresult-small").text("PASSED").removeClass("color-run").addClass("color-ac");
     }
 }
