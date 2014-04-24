@@ -6,6 +6,7 @@ def main():
         return
     # retrieve submission_id
     submission_id = sys.argv[1]
+    language = sys.argv[2]
     datadir = '/data/submission/' + submission_id
     os.chdir(datadir)
     
@@ -19,8 +20,7 @@ def main():
     os.system('chroot("/jail")')
     os.system('setuid("uid")')
 
-    # compile and run
-    
+    # compile and run based on language   
 
     
 
